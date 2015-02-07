@@ -8,10 +8,22 @@ import os
 from src import app
 from src import manager
 from src import db
-
+from src.models import *
 @manager.command
 def hello():
     print("hello")
+    
+@manager.command
+def create_users():
+    new_user = User(name='jesse', password='test', email='hello0@world.com', role='admin')
+    db.session.add(new_user)
+    new_user = User(name='lucy', password='test', email='hello1@world.com')
+    db.session.add(new_user)
+    new_user = User(name='john', password='test', email='hello2@world.com')
+    db.session.add(new_user)
+    new_user = User(name='marry', password='test', email='hello3@world.com')
+    db.session.add(new_user)
+    db.session.commit()
     
 @manager.command
 def run():
