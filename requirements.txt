@@ -4,3 +4,5 @@ Flask-SQLAlchemy
 Flask-Migrate
 Flask-Script
 splinter
+pep8
+autopep8
