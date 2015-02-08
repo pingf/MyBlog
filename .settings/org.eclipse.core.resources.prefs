@@ -1,2 +1,5 @@
 eclipse.preferences.version=1
 encoding//py3_mac/lib/python3.4/site-packages/flask/globals.py=utf-8
+encoding//py3_mac/lib/python3.4/site-packages/flask/helpers.py=utf-8
+encoding//py3_mac/lib/python3.4/site-packages/flask_login.py=utf-8
+encoding//py3_mac/lib/python3.4/site-packages/flask_wtf/form.py=utf-8

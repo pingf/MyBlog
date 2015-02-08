@@ -5,9 +5,8 @@ Created on Dec 21, 2014
 '''
 
 import os
-from src import app
-from src import manager
-from src import db
+from src.helper import *
+
 from src.models import *
 
 
@@ -36,7 +35,7 @@ def create_users():
 @manager.command
 def run():
     port = int(os.environ.get('PORT', 4444))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='0.0.0.0', port=port, debug=True)
 
 if __name__ == "__main__":
     manager.run()

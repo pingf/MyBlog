@@ -20,3 +20,8 @@ target_metadata = current_app.extensions['migrate'].db.metadata
 
 ### integrated test
 对于mac系统,可能要执行`brew install chromedriver`
+
+###pep8 格式验证
+检查`pep8 --first <filename>`
+详细显示`pep8 --show-source --show-pep8 <filename>`
+修正`autopep8 --in-place --aggressive --aggressive <filename>`

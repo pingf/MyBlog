@@ -3,6 +3,8 @@ Flask
 Flask-SQLAlchemy
 Flask-Migrate
 Flask-Script
+Flask-Login
+Flask-WTF
 splinter
 pep8
 autopep8
