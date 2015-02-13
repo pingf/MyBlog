@@ -11,7 +11,7 @@ class User(db.Model):
     role = db.Column('role', db.String(32), index=True)
     registered_at = db.Column('registered_at' , db.DateTime)
     updated_at = db.Column('updated_at' , db.DateTime)
-#     posts = db.relationship("Post",backref="user")
+    posts = db.relationship("Post",backref="user")
 
     def __init__(self, name, password, email, role='normal'):
         self.name = name
