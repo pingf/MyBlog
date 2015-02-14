@@ -8,6 +8,7 @@ import os
 from src.helper import *
 
 from src.models import *
+from alembic.testing.config import db
 
 @manager.command
 def hello():
@@ -27,11 +28,11 @@ def create_users():
 
 @manager.command
 def create_posts():
-    new_post = Post(user_id=1, title='hello1', content='world1')
+    new_post = Post(user_id=2, title='hello1', content='world1')
     db.session.add(new_post)
-    new_post = Post(user_id=1, title='hello2', content='world2')
+    new_post = Post(user_id=2, title='hello2', content='world2')
     db.session.add(new_post)
-    new_post = Post(user_id=1, title='hello3', content='world3')
+    new_post = Post(user_id=3, title='hello3', content='world3')
     db.session.add(new_post)
     db.session.commit()
 

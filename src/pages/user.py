@@ -29,6 +29,7 @@ def login():
     else: 
         email = request.form['email']
         password = request.form['password']
+        
         registered_user = User.query.filter_by(email=email,password=password).first()
         if registered_user is not None:
             login_user(registered_user)

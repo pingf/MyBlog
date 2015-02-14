@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block head %}
+{{ super() }}
+{% endblock %}
+
+{% block header %}
+{% endblock %}
+
+{% block content %}
+<ul id="posts">
+	{% for post in posts %}
+	<li>
+		<p>{{ post.title }}</p>	
+		<p>{{ post.content }}</p>	
+	</li>
+	{% endfor %}
+</ul>
+{% endblock %}
+
+{% block footer %}
+{{ super() }}
+{% endblock %}

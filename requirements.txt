@@ -8,3 +8,4 @@ Flask-WTF
 splinter
 pep8
 autopep8
+nose

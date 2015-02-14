@@ -10,7 +10,9 @@ from src.helper import *
 from src.models import *
 
 from src.pages import *
+
 app.register_blueprint(simple_page)
 app.register_blueprint(user_page)
+app.register_blueprint(posts_page)
 
 
